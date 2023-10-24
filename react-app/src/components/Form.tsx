@@ -27,6 +27,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+      {/* div.mb-3>label.form-label+input.form-control */}
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name
