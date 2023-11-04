@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import useAddTodo from "../hooks/useAddTodos";
+import useAddTodo from "./hooks/useAddTodos";
 
 const TodoForm = () => {
   const ref = useRef<HTMLInputElement>(null);
@@ -29,9 +29,7 @@ const TodoForm = () => {
           <input ref={ref} type="text" className="form-control" />
         </div>
         <div className="col">
-          <button disabled={addTodo.isLoading} className="btn btn-primary">
-            {addTodo.isLoading ? "Adding..." : "Add"}
-          </button>
+          <button className="btn btn-primary">Add</button>
         </div>
       </form>
     </>
