@@ -6,7 +6,6 @@ import TodoList from "./react-query/TodoList";
 import Counter from "./state-management/Counter";
 import LoginStatus from "./state-management/LoginStatus";
 import TaskList from "./state-management/tasks/TaskList";
-import tasksReducer from "./state-management/tasks/tasksReducer";
 import { Dispatch } from "react";
 import TasksContext from "./state-management/tasks/tasksContext";
 import NavBar from "./state-management/NavBar";
@@ -14,7 +13,7 @@ import HomePage from "./state-management/HomePage";
 import authReducer from "./state-management/reducers/authReducer";
 import AuthContext from "./state-management/contexts/authContext";
 import AuthProvider from "./state-management/AuthProvider";
-import TasksProvider from "./state-management/tasks/TasksProvider";
+import { TasksProvider } from "./state-management/tasks";
 
 function App() {
   return (
