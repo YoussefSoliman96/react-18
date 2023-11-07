@@ -3,10 +3,12 @@ import tasksReducer from "./reducers/tasksReducer";
 import TasksContext from "./context/tasksContext";
 import authReducer from "./reducers/authReducer";
 import AuthContext from "./context/authContext";
+import useTasks from "./hooks/useTasks";
+import useAuth from "./hooks/useAuth";
 
 const TaskList = () => {
-  const { tasks, dispatch } = useContext(TasksContext);
-  const { user } = useContext(AuthContext);
+  const { tasks, dispatch } = useTasks();
+  const { user } = useAuth();
 
   return (
     <>
