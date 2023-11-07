@@ -1,13 +1,13 @@
 interface loginAction {
   type: "Login";
-  username: "mosh.hamedani";
+  username: "youssef.soliman";
 }
 
 interface logoutAction {
   type: "Logout";
 }
 
-type authAction = loginAction | logoutAction;
+export type authAction = loginAction | logoutAction;
 
 const authReducer = (state: string, action: authAction): string => {
   if (action.type === "Login") {
