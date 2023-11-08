@@ -10,19 +10,16 @@ import { Dispatch } from "react";
 import TasksContext from "./state-management/tasks/tasksContext";
 import NavBar from "./state-management/NavBar";
 import HomePage from "./state-management/HomePage";
-import AuthContext from "./state-management/auth/authContext";
-import AuthProvider from "./state-management/auth/AuthProvider";
+
 import { TasksProvider } from "./state-management/tasks";
 
 function App() {
   return (
-    <AuthProvider>
-      <TasksProvider>
-        <Counter></Counter>
-        <NavBar></NavBar>
-        <HomePage></HomePage>
-      </TasksProvider>
-    </AuthProvider>
+    <TasksProvider>
+      <Counter></Counter>
+      <NavBar></NavBar>
+      <HomePage></HomePage>
+    </TasksProvider>
   );
 }
 
