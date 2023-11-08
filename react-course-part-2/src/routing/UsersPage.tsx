@@ -3,8 +3,6 @@ import UserListPage from "./UserList";
 import useAuth from "./hooks/useAuth";
 
 const UsersPage = () => {
-  const { user } = useAuth();
-  if (!user) return <Navigate to={"/login"}></Navigate>;
   return (
     <div className="row">
       <div className="col">
