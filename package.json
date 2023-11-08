@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "simple-zustand-devtools": "^1.1.0",
     "zustand": "^4.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0"
   }
 }
